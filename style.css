@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+*{
+    box-sizing: border-box;
+    text-align: center;
+    font-family:'Times New Roman', Times, serif
+}
+
+body{
+    background-color: whitesmoke;
+    font-family: 'Poppins', sans-serif;
+}
+
+.wholescreen{
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+}
+
+.resultwindow{
+    padding-top: 150px;
+    height: 1100px;
+    width: 27%;
+    background: green;
+    font-size: 40px;
+    font-weight: 900;
+    border: 2px solid;
+    border-radius: 10px;
+}
+
+.resultscr{
+    padding: 15px 5px;
+}
+
+#CGPA,#CGPA-2,#CGPA-3{
+    font-size: 30px;
+}
+
+#percentage,#percentage-2,#percentage-3{
+    font-size: 30px;
+}
+
+.header{
+    display: block;
+}
+
+#switch,#back,#cg{
+    padding: 3px;
+    border: 5px solid green;
+    border-radius: 10px;
+    background: green;
+    font-size: 20px;
+}
+
+#calculator,#cgpa-cal{
+    position: absolute;
+    top: 20%;
+    left: 27vw;
+    background: whitesmoke;
+    border: 5px solid black;
+    border-radius: 4px;
+}
+
+.heading{
+    position: absolute;
+    top: 5%;
+    justify-content: center;
+}
+
+.totals{
+    padding: 0 0 0 20px;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 2px solid black;
+
+}
+
+#Sub,#Sub-c{
+    margin-top: 20px ;
+    margin-left: 25px;
+    height: 40px;
+    width: 25%;
+    border: 5px solid;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.totals p{
+    font-size: 25px;
+    font-weight: 800;
+}
+
+#btn,#btn-c{
+    background: green;
+    font-size: 20px;
+    border: 2px solid black;
+    border-radius: 5px;
+    height: 50%;
+    margin-top: 25px;
+    width: 15%;
+    margin-left: 25px;
+}
+
+#buttons,#buttons_c{
+    padding-top: 10px;
+    display: none;
+    flex-direction: column;
+    gap: 15px;
+    border: 1px solid black;
+}
+
+.btns{
+    padding: 5px 8px;
+    border: 1px;
+    background-color: whitesmoke;
+    width: 20%;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.select,.inputs{
+    padding: 2px 6px;
+    border: 5px solid black;
+    border-radius: 5px;
+    margin-left: 30px;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+
+.c-hours{
+    padding: 2px 6px;
+    border: 5px solid black;
+    border-radius: 5px;
+    margin-left: 30px;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.select option{
+    padding: 5px;
+    text-align: left;
+    border-top: 2px solid;
+}
+
+#buttons div , #buttons_c div{
+    padding: 8px;
+    border-bottom: 4px solid black;
+}
+
+#res,#res-c{
+    font-size: 15px;
+    font-weight: 700;
+    width: 50%;
+    padding: 8px;
+    background: rgb(41, 243, 41);
+    border: 4px solid black;
+    border-radius: 5px;
+}
+
+#cgpa-cal{
+    display: none;
+}
+
+#nd{
+    font-size: 22px;
+}
+#Sub-c{
+    margin-top: 18px;
+}
+#btn-c{
+    margin-top: 25px;
+    padding: 0;
+    color: black;
+}
+#cg{
+   display: none;
+}
+
+.resultwindow2{
+    display: none;
+    background: green;
+    font-size: 40px;
+    font-weight: 900;
+    border: 2px solid;
+    border-radius: 10px;
+    padding: 15px;
+    width: 100%;
+    height: 400px;
+}
+
+
+
+@media screen and (max-width : 1050px) {
+    .wholescreen{
+        display: flex;
+        flex-direction: column;
+    }
+    .resultwindow{
+        display: none;
+    }
+    .resultwindow2{
+        display: block;
+    }
+    #calculator{
+        display: block;
+        left: 2%;
+        right: 2%;
+        top: 15%;
+    }
+    #cgpa-cal{
+        left: 2%;
+        right: 2%;
+        top: 15%;  
+    }
+}
+
+@media screen and (max-width : 750px) {
+    .totals p{
+        font-size: 15px;
+    }
+    #nd{
+        font-size: 13px;
+    }
+    #Sub,#Sub-c{
+        height: 30px;
+        margin-top: 10px;
+        font-size: 12px;
+        border: 3px solid black;
+    }
+    #Sub-c{
+        margin-top: 7px;
+    }
+    #btn,#btn-c{
+        margin-top: 14px;
+        font-size: 12px;
+    }
+}
+
+
+@media screen and (max-width : 650px) {
+    .btns{
+        font-size: 15px;
+    }
+    .select,.inputs{
+        border: 4px solid;
+        border-radius: 4px;
+        font-size: 12px;
+    }
+    .c-hours{
+        border: 4px solid black;
+        border-radius: 4px;
+        font-size: 12px;
+    }
+    #res,#res-c{
+        font-size: 12px;
+        width: 60%;
+    }
+}
+
+
+@media screen and (max-width : 650px) {
+    .select{
+        padding: 1px 3px;
+    }
+    .inputs{
+        padding: 0;
+    }
+    .c-hours{
+        padding: 1px 3px;
+    }
+}
+
+
+@media screen and (max-width : 450px){
+    #switch,#back,#cg{
+        font-size: 10px;
+    }
+    .heading{
+        font-size: 15px;
+    }
+    .totals p{
+        font-size: 8px;
+    }
+    #nd{
+        font-size: 9px;
+    }
+    #btn,#btn-c{
+        margin-left: 12px;
+        margin-top: 5px;
+        font-size: 8px;
+    }
+    #Sub,#Sub-c{
+        margin-top: 5px;
+        margin-left: 15px;
+        border: 1px solid;
+        font-size: 8px;
+        height: 15px;
+    }
+    .resultwindow2{
+        font-size: 25px;
+        font-weight: 700;
+        height: 200px;
+    }
+    .resultscr{
+        font-size: 20px;
+        margin: 13px 0px;
+    }
+    #CGPA,#percentage,#CGPA-2,#CGPA-3,#percentage-2,#percentage-3{
+        font-size: 15px;
+    }
+    .btns{
+        font-size: 9px;
+    }
+    .select,.inputs{
+        border: 2px solid;
+        border-radius: 2px;
+        margin-left: 5px;
+        font-size: 9px;
+    }
+    .c-hours{
+        margin-left: 5px;
+        font-size: 9px;
+        border: 2px solid black;
+        border-radius: 2px;
+    }
+    #res,#res-c{
+        font-size: 10px;
+        width: 70%;
+        padding: 2px 7px;
+    }
+}
